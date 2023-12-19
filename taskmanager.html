@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="taskmanager.css">
+</head>
+<body class="darker-theme">
+  <div class="container">
+    <h1>Task Manager</h1>
+    <hr width="50%" align="center"/><br>
+    <form id="task-form">
+      <input type="text" id="task-title" placeholder="Task Title" required>
+      <input type="text" id="task-description" placeholder="Task Description" required>
+      <input type="date" id="due-date" required>
+      <select id="status" required>
+        <option value="pending">Pending</option>
+        <option value="in-progress">In Progress</option>
+        <option value="complete">Complete</option>
+      </select>
+      
+      <button type="submit">Add Task</button>
+
+    </form>
+    <div id="task-list"></div>
+  </div>
+
+  <script src="taskmanager.js"></script>
+</body>
+</html>
